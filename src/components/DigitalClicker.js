@@ -13,7 +13,7 @@ export default class DigitalClicker extends Component{
 
     addClick = () => {
     
-        this.setState(prevState => ({timesClicked: prevState.timesClicked + 1 }))
+        this.setState(p => ({timesClicked: p.timesClicked + 1 }))
  
 
     }
