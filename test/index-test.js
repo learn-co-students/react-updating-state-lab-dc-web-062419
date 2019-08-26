@@ -64,14 +64,3 @@ describe('<YouTubeDebugger />', () => {
 
     expect(wrapper.state()).to.deep.equal(expectedState);
   });
-
-  it('should update the video resolution when the `.resolution` button is clicked', () => {
-    const wrapper = shallow(<YouTubeDebugger />);
-    const expectedState = deepClone(BASE_STATE);
-    expectedState.settings.video.resolution = '720p';
-
-    wrapper.find('.resolution').simulate('click');
-
-    expect(wrapper.state()).to.deep.equal(expectedState);
-  });
-});
